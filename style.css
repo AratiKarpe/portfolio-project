@@ -1,0 +1,238 @@
+/* General Styles */
+/* Body Background with Animated Gradient */
+/* Body Background with Pattern */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #e0eafc, #cfdef3), url('https://www.toptal.com/designers/subtlepatterns/patterns/geometry2.png');
+    background-size: cover, auto;
+    color: #333;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+
+/* Animation for the Gradient */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/* Header Styles */
+header {
+    background: linear-gradient(90deg, #0078d7, #005a9e);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2em;
+    opacity: 0.8;
+}
+
+/* Navigation Bar */
+nav {
+    background: #005a9e;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 20px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #005a9e;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Section Styles */
+section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    animation: fadeIn 1s ease-out;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #005a9e;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+section h2::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background: #0078d7;
+    bottom: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+section p {
+    font-size: 1.1em;
+    margin: 15px 0;
+}
+
+/* Education Section */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #f0faff;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+ul li h4 {
+    margin: 0;
+    font-size: 1.4em;
+    color: #0078d7;
+}
+
+ul li p {
+    font-size: 0.95em;
+    color: #555;
+}
+
+/* Projects Section */
+ul li strong {
+    font-size: 1.2em;
+}
+
+ul li a {
+    color: #0078d7;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+ul li a:hover {
+    color: #005a9e;
+    text-decoration: underline;
+}
+
+/* Contact Section */
+#contact a {
+    color: #5aa9e5;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease, color 0.3s ease;
+}
+
+#contact a:hover {
+    color: #005a9e;
+    border-color: #0078d7;
+}
+
+#contact h5 {
+    margin-top: 20px;
+    font-size: 1em;
+    color: #333;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    background: #005a9e;
+    color: white;
+    padding: 20px 0;
+    margin-top: 50px;
+    font-size: 0.9em;
+}
+
+footer nav {
+    margin-bottom: 10px;
+}
+
+footer nav a {
+    color: #0078d7;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav a {
+        margin: 5px;
+        padding: 10px;
+    }
+
+    section {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+}
